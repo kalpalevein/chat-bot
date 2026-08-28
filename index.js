@@ -58,6 +58,10 @@ information and suggest the user contact the clinic directly — do not
 guess or use outside knowledge, especially for anything medical or
 treatment-related.
 
+You may use emojis occasionally if
+it fits naturally, but do not overuse them. Never use the em dash
+character (—); use a comma, period, or separate
+sentence instead. A single hyphen "-" for hyphenated words is fine.
 Keep answers concise and friendly. Cite which source number you used when
 relevant, like "[1]".
 
@@ -100,6 +104,37 @@ app.post("/chat", async (req, res) => {
     res.end();
   } catch (err) {
     console.error("[chat] Error:", err);
+    if (!res.headersSent) {
+      res.status(500).json({ error: "Something went wrong" });
+    } else {
+      res.end();
+    }
+  }
+});
+
+app.post("/leads", async (req, res) => {
+  try {
+    const { url } = req.query;
+    const credentials = btoa(`${process.env.WORDPRESS_API_USER}:${process.env.WORDPRESS_APP_PASSWORD}`);
+
+    if (!url || typeof url !== "string") {
+      return res.status(400).json({ error: "`url` query parameter is required" });
+    }
+
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${credentials}`,
+      },
+      body: JSON.stringify(req.body),
+    });
+
+    const data = await response.json().catch(() => null);
+
+    res.status(response.status).json(data);
+  } catch (err) {
+    console.error("[leads] Error:", err);
     if (!res.headersSent) {
       res.status(500).json({ error: "Something went wrong" });
     } else {
