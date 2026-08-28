@@ -12,13 +12,14 @@ const app = express();
 // (e.g. https://skinaestheticshaleema.co.uk) so only that site can call
 // this API. Falls back to allowing all origins for local development.
 const allowedOrigin = process.env.ALLOWED_ORIGIN;
-app.use(
-  cors(
-    allowedOrigin
-      ? { origin: allowedOrigin }
-      : {} // permissive default for local dev
-  )
-);
+// app.use(
+//   cors(
+//     allowedOrigin
+//       ? { origin: allowedOrigin }
+//       : {} // permissive default for local dev
+//   )
+// );
+app.use(cors());
 app.use(express.json());
 
 const TOP_K = 5;
