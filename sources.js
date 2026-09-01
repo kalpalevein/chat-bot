@@ -12,6 +12,41 @@ module.exports = [
     value: "https://dev.skinaestheticshaleema.co.uk/",
   },
   {
+    id: "haleema-about",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/about/",
+  },
+  {
+    id: "haleema-consultation",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/consultation/",
+  },
+  {
+    id: "haleema-skin-treatments",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/treatments/skin-treatments/",
+  },
+  {
+    id: "haleema-injectables",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/treatments/injectables/",
+  },
+  {
+    id: "haleema-laser-hair-removal",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/treatments/laser-hair-removal/",
+  },
+  {
+    id: "haleema-wellness",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/treatments/wellness/",
+  },
+  {
+    id: "haleema-memberships",
+    type: "url",
+    value: "https://dev.skinaestheticshaleema.co.uk/memberships/",
+  },
+  {
     id: "haleema-results",
     type: "url",
     value: "https://dev.skinaestheticshaleema.co.uk/results/",
