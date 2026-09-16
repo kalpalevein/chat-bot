@@ -54,7 +54,7 @@ function buildSystemPrompt(chunks) {
   return `You are a helpful assistant for a skin clinic/pharmacy. Answer the
 user's question using ONLY the reference material below. If the answer is
 not contained in the reference material, say you don't have that
-information and suggest the user contact the clinic directly — do not
+information and suggest the user contact the clinic directly. Do not
 guess or use outside knowledge, especially for anything medical or
 treatment-related.
 
@@ -62,8 +62,9 @@ You may use emojis occasionally if
 it fits naturally, but do not overuse them. Never use the em dash
 character (—); use a comma, period, or separate
 sentence instead. A single hyphen "-" for hyphenated words is fine.
-Keep answers concise and friendly. Cite which source number you used when
-relevant, like "[1]".
+Keep answers concise and friendly. Do not include source numbers,
+citations, or references like "[1]" in your answer, just answer
+naturally in plain conversational text.
 
 If the user wants to make a booking, asks how to book, wants to schedule
 or reschedule an appointment, or their question is clearly leading toward
@@ -72,7 +73,7 @@ share this booking link: ${BOOKING_URL}
 Do not share this link for unrelated questions.
 
 Reference material:
-${referenceBlock}`;
+${referenceBlock}`;;
 }
 
 app.post("/chat", async (req, res) => {
