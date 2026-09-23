@@ -83,14 +83,114 @@ module.exports = [
   //   type: "file",
   //   value: "./assets/docs/injectables-detail.md",
   // },
+  // {
+  //   id: "haleema-laser-hair-removal-detail",
+  //   type: "file",
+  //   value: "./assets/docs/laser-hair-removal-detail.md",
+  // },
+  // {
+  //   id: "haleema-wellness-detail",
+  //   type: "file",
+  //   value: "./assets/docs/wellness-detail.md",
+  // },
+  // {
+  //   id: "haleema-skin-boosters-profhilo",
+  //   type: "file",
+  //   value: "./assets/docs/skin-boosters-profhilo.md",
+  // },
+  // {
+  //   id: "haleema-vitamin-injections",
+  //   type: "file",
+  //   value: "./assets/docs/vitamin-injections.md",
+  // },
+  // {
+  //   id: "haleema-weight-loss-medications",
+  //   type: "file",
+  //   value: "./assets/docs/weight-loss-medications.md",
+  // },
+  // {
+  //   id: "haleema-anti-wrinkle-treatments",
+  //   type: "file",
+  //   value: "./assets/docs/anti-wrinkle-treatments.md",
+  // },
+  // {
+  //   id: "haleema-chemical-peels",
+  //   type: "file",
+  //   value: "./assets/docs/chemical-peels.md",
+  // },
+  // {
+  //   id: "haleema-consultation",
+  //   type: "file",
+  //   value: "./assets/docs/consultation.md",
+  // },
+  // {
+  //   id: "haleema-dermal-fillers",
+  //   type: "file",
+  //   value: "./assets/docs/dermal-fillers.md",
+  // },
+  // {
+  //   id: "haleema-fat-dissolving-aqualyx",
+  //   type: "file",
+  //   value: "./assets/docs/fat-dissolving-aqualyx.md",
+  // },
+  // {
+  //   id: "haleema-hifu",
+  //   type: "file",
+  //   value: "./assets/docs/hifu.md",
+  // },
+  // {
+  //   id: "haleema-hydrafacial",
+  //   type: "file",
+  //   value: "./assets/docs/hydrafacial.md",
+  // },
+  // {
+  //   id: "haleema-laser-consultation-and-patch-test",
+  //   type: "file",
+  //   value: "./assets/docs/laser-consultation-and-patch-test.md",
+  // },
+  // {
+  //   id: "haleema-laser-hair-removal",
+  //   type: "file",
+  //   value: "./assets/docs/laser-hair-removal.md",
+  // },
+  // {
+  //   id: "haleema-medical-facials",
+  //   type: "file",
+  //   value: "./assets/docs/medical-facials.md",
+  // },
+  // {
+  //   id: "haleema-microneedling",
+  //   type: "file",
+  //   value: "./assets/docs/microneedling.md",
+  // },
+  // {
+  //   id: "haleema-polynucleotides",
+  //   type: "file",
+  //   value: "./assets/docs/polynucleotides.md",
+  // },
+  // {
+  //   id: "haleema-rf-microneedling",
+  //   type: "file",
+  //   value: "./assets/docs/rf-microneedling.md",
+  // },
+  // {
+  //   id: "haleema-skin-boosters-profhilo-plain",
+  //   type: "file",
+  //   value: "./assets/docs/skin-boosters-profhilo-plain.md",
+  // },
+  // {
+  //   id: "haleema-obagi-medical",
+  //   type: "file",
+  //   value: "./assets/docs/obagi-medical.md",
+  // },
+  // {
+  //   id: "haleema-glutaceuticals",
+  //   type: "file",
+  //   value: "./assets/docs/glutaceuticals.md",
+  // },
   {
-    id: "haleema-laser-hair-removal-detail",
+    id: "booking-cancellation-policy",
     type: "file",
-    value: "./assets/docs/laser-hair-removal-detail.md",
-  },
-  {
-    id: "haleema-wellness-detail",
-    type: "file",
-    value: "./assets/docs/wellness-detail.md",
+    value: "./assets/docs/booking-cancellation-policy.md",
   },
 ];
