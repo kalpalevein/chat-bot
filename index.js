@@ -4,7 +4,8 @@ const express = require("express");
 const cors = require("cors");
 const { pool } = require("./db");
 const { embed } = require("./lib/embed");
-const { streamChatCompletion } = require("./lib/claude");
+// const { streamChatCompletion } = require("./lib/claude");
+const { streamChatCompletion } = require("./lib/llm");
 
 const app = express();
 
